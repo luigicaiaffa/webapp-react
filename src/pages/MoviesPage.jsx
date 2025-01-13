@@ -1,8 +1,8 @@
-export default function NotFound() {
+export default function FilmsPage() {
   return (
     <>
       <div className="container mt-5">
-        <h1>Page Not Found</h1>
+        <h1>Movies List</h1>
       </div>
     </>
   );
