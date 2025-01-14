@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container py-4">
         <div className="left-footer">
-          <Link>
+          <Link to={"/about"}>
             <span className="fs-5">About Us</span>
           </Link>
         </div>

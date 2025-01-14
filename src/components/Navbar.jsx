@@ -25,6 +25,11 @@ export default function Navbar() {
                 Movies List
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to={"/about"} className="nav-link" aria-current="page">
+                About Us
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
