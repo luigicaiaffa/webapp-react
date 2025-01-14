@@ -1,4 +1,4 @@
-export default function ShowCard({ movie, reviews }) {
+export default function ShowCard({ movie }) {
   return (
     <div className="card mb-3">
       <div className="row g-0">
@@ -11,10 +11,21 @@ export default function ShowCard({ movie, reviews }) {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title">{movie.title}</h5>
-            <p className="card-text">{movie.director}</p>
-            <p className="card-text">{movie.genre}</p>
-            <p className="card-text">{movie.release_year}</p>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                <i className="fa-solid fa-clapperboard"></i> {movie.director}
+              </li>
+              <li className="list-group-item">
+                <i class="fa-solid fa-bars"></i> {movie.genre}
+              </li>
+              <li className="list-group-item">
+                <i className="fa-solid fa-calendar"></i> {movie.release_year}
+              </li>
+            </ul>
+
+            <hr />
+
+            <p className="px-3 card-text">{movie.abstract}</p>
           </div>
         </div>
       </div>

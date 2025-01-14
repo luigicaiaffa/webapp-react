@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import ShowCard from "../../components/ShowCard";
 import ReviewSection from "../../components/ReviewSection";
@@ -34,7 +34,17 @@ export default function FilmShowPage() {
   return (
     <>
       <div className="container mt-5 py-5">
-        <h1>{movieData.title}</h1>
+        <div className="d-flex justify-content-between">
+          <h1 className="fw-bold">
+            <i className="fa-solid fa-film"></i> {movieData.title}
+          </h1>
+
+          <div>
+            <Link className="btn btn-primary" to={"/movies"}>
+              Torna alla lista
+            </Link>
+          </div>
+        </div>
 
         <ShowCard movie={movieData} />
 
