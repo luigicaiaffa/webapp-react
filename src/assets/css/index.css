@@ -1,9 +1,23 @@
-.card-link {
-  text-decoration: none;
+:root {
+  --bg-color: #ffffff;
+  --primary-color: #ffffff;
+  --footer-color: #000000;
+  --footer-height: 100px;
 }
 
-.card:hover {
+.wrapper {
+  background-color: var(--bg-color);
+  min-height: calc(100vh - var(--footer-height));
+}
+
+/* # Cards */
+
+.card-link .card:hover {
   cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card-img-top {
@@ -16,4 +30,28 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* # Footer */
+
+.footer {
+  background-color: var(--footer-color);
+  color: var(--primary-color);
+  height: 100px;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-footer > div {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-right-nav li {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-left: 10px;
 }

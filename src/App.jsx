@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DefaultLayout from "./layout/DefaultLayout";
 
 import HomePage from "./pages/HomePage";
-import MoviesIndexPage from "./pages/MoviesIndexPage";
-import MovieShowPage from "./pages/MovieShowPage";
 import NotFound from "./pages/NotFound";
+
+import MoviesIndexPage from "./pages/movies/MoviesIndexPage";
+import MovieShowPage from "./pages/movies/MovieShowPage";
 
 function App() {
   return (

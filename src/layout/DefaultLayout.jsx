@@ -1,12 +1,17 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 export default function DefaultLayout() {
   return (
     <>
-      <Header />
+      <div className="wrapper">
+        <Header />
 
-      <Main />
+        <Main />
+      </div>
+
+      <Footer />
     </>
   );
 }
