@@ -40,7 +40,7 @@ export default function FilmShowPage() {
           </h1>
 
           <div>
-            <Link className="btn btn-primary" to={"/movies"}>
+            <Link className="btn card-bg" to={"/movies"}>
               Torna alla lista
             </Link>
           </div>
@@ -50,6 +50,7 @@ export default function FilmShowPage() {
 
         <hr />
 
+        <h4 className="fw-bold">Recensioni</h4>
         <ReviewSection reviews={reviewsData} />
       </div>
     </>

@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container py-4">
         <div className="left-footer">
-          <div>Movies Blog</div>
+          <Link>
+            <span className="fs-5">About Us</span>
+          </Link>
         </div>
 
         <div className="right-footer">

@@ -66,17 +66,24 @@ export default function ReviewSection({ reviews }) {
       {reviews ? (
         reviews.map((review) => {
           return (
-            <ul key={review.id} className="list-group list-group-flush mt-4">
-              <li className="list-group-item mb-2">
-                <span className="user-badge">{review.name.charAt(0)}</span>
-              </li>
-              <li className="list-group-item">
-                <div className="d-flex justify-content-between">
-                  <div>{review.text}</div>
-                  <div>{voteStarsFormatter(review.vote)}</div>
-                </div>
-              </li>
-            </ul>
+            <div key={review.id} className="card my-4">
+              <div className="card-body card-bg rounded">
+                <ul className="list-group list-group-flush rounded">
+                  <li className="list-group-item d-flex">
+                    <div className="user-badge rounded-pill">
+                      <i className="fa-solid fa-user"></i>
+                      <span className="ms-2">{review.name}</span>
+                    </div>
+                  </li>
+                  <li className="list-group-item">
+                    <div className="d-flex justify-content-between">
+                      <div>{review.text}</div>
+                      <div>{voteStarsFormatter(review.vote)}</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           );
         })
       ) : (

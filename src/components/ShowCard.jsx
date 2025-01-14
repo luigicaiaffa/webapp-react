@@ -5,27 +5,27 @@ export default function ShowCard({ movie }) {
         <div className="col-md-4">
           <img
             src={movie.image}
-            className="card-show-img img-fluid rounded-start"
+            className="card-show-img img-fluid"
             alt={movie.title}
           />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 card-bg">
           <div className="card-body">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
+            <ul className="list-group list-group-flush rounded">
+              <li className="list-group-item fs-5">
                 <i className="fa-solid fa-clapperboard"></i> {movie.director}
               </li>
-              <li className="list-group-item">
+              <li className="list-group-item fs-5">
                 <i className="fa-solid fa-bars"></i> {movie.genre}
               </li>
-              <li className="list-group-item">
+              <li className="list-group-item fs-5">
                 <i className="fa-solid fa-calendar"></i> {movie.release_year}
               </li>
             </ul>
 
             <hr />
 
-            <p className="px-3 card-text">{movie.abstract}</p>
+            <p className="fs-5 px-3 card-text">{movie.abstract}</p>
           </div>
         </div>
       </div>
