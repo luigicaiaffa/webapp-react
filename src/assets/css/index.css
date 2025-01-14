@@ -1,7 +1,19 @@
 .card-link {
-    text-decoration: none;
-}   
+  text-decoration: none;
+}
 
 .card:hover {
   cursor: pointer;
+}
+
+.card-img-top {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-show-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

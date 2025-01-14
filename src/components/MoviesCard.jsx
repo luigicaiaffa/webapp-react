@@ -5,7 +5,7 @@ export default function MoviesCard({ data }) {
     <>
       <Link className="card-link" to={`/movies/${data.id}`}>
         <div className="card h-100">
-          <img src="#" className="card-img-top" alt="img" />
+          <img src={data.image} className="card-img-top" alt={data.title} />
           <div className="card-body">
             <h5 className="card-title fw-bold">{data.title}</h5>
             <ul className="list-group list-group-flush">
