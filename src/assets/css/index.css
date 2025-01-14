@@ -10,6 +10,14 @@
   min-height: calc(100vh - var(--footer-height));
 }
 
+.user-badge {
+  border-radius: 50%;
+  background-color: #000000;
+  color: white;
+  border: solid 7px black;
+  padding: 0 5px;
+}
+
 /* # Cards */
 
 .card-link .card:hover {

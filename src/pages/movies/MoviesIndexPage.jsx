@@ -19,7 +19,7 @@ export default function MoviesIndexPage() {
 
   return (
     <>
-      <div className="container mt-5 pt-5">
+      <div className="container mt-5 py-5">
         <h1 className="fw-bold mb-4">
           <i className="fa-solid fa-film"></i> MOVIES
         </h1>

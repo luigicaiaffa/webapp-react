@@ -16,7 +16,7 @@ export default function ShowCard({ movie }) {
                 <i className="fa-solid fa-clapperboard"></i> {movie.director}
               </li>
               <li className="list-group-item">
-                <i class="fa-solid fa-bars"></i> {movie.genre}
+                <i className="fa-solid fa-bars"></i> {movie.genre}
               </li>
               <li className="list-group-item">
                 <i className="fa-solid fa-calendar"></i> {movie.release_year}
