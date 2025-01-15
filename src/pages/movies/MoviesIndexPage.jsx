@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MoviesCard from "../../components/MoviesCard";
-import { Link } from "react-router-dom";
 
 export default function MoviesIndexPage() {
   const [moviesData, setMoviesData] = useState([]);
@@ -18,7 +17,7 @@ export default function MoviesIndexPage() {
   return (
     <>
       <div className="container mt-5 py-5">
-        <h1 className="fw-bold mb-4">
+        <h1 className="fw-bold title-text mb-4">
           <i className="fa-solid fa-film"></i> MOVIES
         </h1>
 

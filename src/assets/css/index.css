@@ -1,9 +1,9 @@
 /* # Config */
 
 :root {
-  --bg-color: #00000025;
+  --bg-color: #202020;
   --primary-color: #8a4040;
-  --secondary-color: #202020;
+  --secondary-color: #0b0b0bf7;
   --footer-height: 100px;
 }
 
@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.title-text {
+  color: var(--primary-color);
+}
+
 /* # Navbar */
 
 .nav-header {
@@ -29,7 +33,7 @@ a {
 /* # Movies Cards */
 
 .card {
-  box-shadow: 12px 10px 15px var(--primary-color);
+  box-shadow: 5px 5px 10px var(--primary-color);
   border: none;
 }
 

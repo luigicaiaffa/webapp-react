@@ -3,8 +3,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 import ShowCard from "../../components/ShowCard";
 import ReviewSection from "../../components/ReviewSection";
+import StoreReviewsForm from "../../components/StoreReviewsForm";
 
-export default function FilmShowPage() {
+export default function MovieShowPage() {
   const [movieData, setMovieData] = useState({});
 
   const goToPage = useNavigate();
@@ -34,14 +35,14 @@ export default function FilmShowPage() {
   return (
     <>
       <div className="container mt-5 py-5">
-        <div className="d-flex justify-content-between">
-          <h1 className="fw-bold">
+        <div className="d-flex justify-content-between mb-3">
+          <h1 className="fw-bold title-text">
             <i className="fa-solid fa-film"></i> {movieData.title}
           </h1>
 
           <div>
             <Link className="btn card-bg" to={"/movies"}>
-              Torna alla lista
+              Back to list
             </Link>
           </div>
         </div>
@@ -50,8 +51,9 @@ export default function FilmShowPage() {
 
         <hr />
 
-        <h4 className="fw-bold">Recensioni</h4>
         <ReviewSection reviews={reviewsData} />
+
+        <StoreReviewsForm />
       </div>
     </>
   );
